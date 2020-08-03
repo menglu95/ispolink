@@ -1,0 +1,92 @@
+
+$ispo-blue: #0000EF;
+$ispo-blue-80: #3333EF;
+$ispo-blue-60: #6565F3;
+$ispo-blue-40: #9999F7;
+$ispo-blue-20: #CBCBFB;
+$ispo-blue-10: #E5E5FD;
+$ispo-blue-5: #F2F2FE;
+$ispo-blue-dark-10: #0000B3;
+$ispo-blue-dark-40: #000077;
+
+$ispo-gray: #1C2D41;
+$ispo-gray-80: #495767;
+$ispo-gray-60: #76818D;
+$ispo-gray-40: #A4ABB3;
+$ispo-gray-20: #CED2D6;
+$ispo-gray-10: #E6E8EA;
+$ispo-gray-5: #F2F3F4;
+$ispo-gray-dark-10: #101A26;
+$ispo-gray-dark-40: #000000;
+
+$ispo-great-grean: #55C883;
+$ispo-great-grean-60: #99DEB4;
+$ispo-great-grean-20: #DDF4E6;
+
+$ispo-okay-grean: #BCE97D;
+$ispo-okay-grean-60: #D6F1B0;
+$ispo-okay-grean-20: #F1FAE4;
+
+$ispo-medium-yellow: #EFE26F;
+$ispo-medium-yellow-60: #F4ECA7;
+$ispo-medium-yellow-20: #FBF8E1;
+
+$ispo-bad-orange: #F5B272;
+$ispo-bad-orange-60: #F8D0A9;
+$ispo-bad-orange-20: #FCEFE2;
+
+$ispo-warning-red: #FF6A79;
+$ispo-warning-red-60: #FEA4AD;
+$ispo-warning-red-20: #FEE0E3;
+
+$primary-color: $ispo-blue !default;
+$secondary-color: $ispo-great-grean !default;
+$button-color: $primary-color !default;
+$button-text-color: #FFF !default;
+
+:export {
+    ispo_blue: $ispo-blue;
+    ispo_blue_80: $ispo-blue-80;
+    ispo_blue_60: $ispo-blue-60;
+    ispo_blue_40: $ispo-blue-40;
+    ispo_blue_20: $ispo-blue-20;
+    ispo_blue_10: $ispo-blue-10;
+    ispo_blue_5: $ispo-blue-5;
+    ispo_blue_dark_10: $ispo-blue-dark-10;
+    ispo_blue_dark_40: $ispo-blue-dark-40;
+
+    ispo_gray: $ispo-gray;
+    ispo_gray_80: $ispo-gray-80;
+    ispo_gray_60: $ispo-gray-60;
+    ispo_gray_40: $ispo-gray-40;
+    ispo_gray_20: $ispo-gray-20;
+    ispo_gray_10: $ispo-gray-10;
+    ispo_gray_5: $ispo-gray-5;
+    ispo_gray_dark_10: $ispo-gray-dark-10;
+    ispo_gray_dark_40: $ispo-gray-dark-40;
+
+    ispo_great_grean: $ispo-great-grean;
+    ispo_great_grean_60: $ispo-great-grean-60;
+    ispo_great_grean_20: $ispo-great-grean-20;
+
+    ispo_okay_grean: $ispo-okay-grean;
+    ispo_okay_grean_60: $ispo-okay-grean-60;
+    ispo_okay_grean_20: $ispo-okay-grean-20;
+
+    ispo_medium_yellow: $ispo-medium-yellow;
+    ispo_medium_yellow_60: $ispo-medium-yellow-60;
+    ispo_medium_yellow_20: $ispo-medium-yellow-20;
+
+    ispo_bad_orange: $ispo-bad-orange;
+    ispo_bad_orange_60: $ispo-bad-orange-60;
+    ispo_bad_orange_20: $ispo-bad-orange-20;
+
+    ispo_warning_red: $ispo-warning-red;
+    ispo_warning_red_60: $ispo-warning-red-60;
+    ispo_warning_red_20: $ispo-warning-red-20;
+
+    primary_color: $primary-color;
+    secondary_color: $secondary-color;
+    button_color: $button-color;
+    button_text_color: $button-text-color;
+}

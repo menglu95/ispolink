@@ -1,0 +1,6 @@
+{
+    "apiUrl": "http://localhost:5555/api/v1",
+    "CONSTANT": {
+        "LOGIN_KEY": "_ispolink_token_"
+    }
+}
