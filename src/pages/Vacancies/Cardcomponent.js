@@ -1,45 +1,25 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import DescriptionIcon from '@material-ui/icons/Description';
 import { blue } from "@material-ui/core/colors";
-
-const useStyles = makeStyles({
-  root: {
-    minWidth: 275,
-    maxWidth: 420,
-    minHeight: 122,
-    maxHeight: 322
-  },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
-  title: {
-    fontSize: 15
-  },
-  pos: {
-    marginTop: 120,
-    marginBottom: 10
-  }
-});
+import './Cardcomponent.scss';
+import { ReactComponent as StarIconOne } from './star-1.svg';
+import { ReactComponent as StarIconTwo } from './star-2.svg';
+import { ReactComponent as StarIconThree } from './star-3.svg';
 
 export default function OutlinedCard() {
-  const classes = useStyles();
-  //   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card className="root" variant="outlined">
       <CardContent>
         <Typography
-          className={classes.title}
+          className="title"
           color="textSecondary"
-          gutterBottom
         >
           Created 12.04.2020
         </Typography>
@@ -55,21 +35,19 @@ export default function OutlinedCard() {
           &nbsp;&nbsp;236 views
         </Typography>
         <Typography color="textSecondary">
-          <VisibilityIcon color="primary" style={{ verticalAlign: "middle" }} />
+          <DescriptionIcon color="primary" style={{ verticalAlign: "sub" }} />
           &nbsp;&nbsp;16 Applications received
         </Typography>
-        <Typography color="textSecondary">
-          <VisibilityIcon color="primary" style={{ verticalAlign: "middle" }} />
-          &nbsp;&nbsp;16 Applications received
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+        <Typography style={{ color: 'limegreen'}} >
+          <StarIconOne />
+          <StarIconThree />
+          <StarIconTwo />
+          
+          &nbsp;&nbsp;Anton DIMITROVA has been hired!
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
+      <CardActions style={{float: 'right' }} >
+        <Button color="primary" style={{fontWeight: 'bold'}}>More</Button>
       </CardActions>
     </Card>
   );
