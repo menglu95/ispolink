@@ -5,22 +5,18 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from "@material-ui/icons/Visibility";
-import DescriptionIcon from '@material-ui/icons/Description';
+import DescriptionIcon from "@material-ui/icons/Description";
 import { blue } from "@material-ui/core/colors";
-import './Cardcomponent.scss';
-import { ReactComponent as StarIconOne } from './star-1.svg';
-import { ReactComponent as StarIconTwo } from './star-2.svg';
-import { ReactComponent as StarIconThree } from './star-3.svg';
+import "./Cardcomponent.scss";
+import { ReactComponent as StarIconOne } from "./star-1.svg";
+import { ReactComponent as StarIconTwo } from "./star-2.svg";
+import { ReactComponent as StarIconThree } from "./star-3.svg";
 
 export default function OutlinedCard() {
-
   return (
     <Card className="root" variant="outlined">
       <CardContent>
-        <Typography
-          className="title"
-          color="textSecondary"
-        >
+        <Typography className="title" color="textSecondary">
           Created 12.04.2020
         </Typography>
         <Typography variant="h4" component="h1">
@@ -38,16 +34,17 @@ export default function OutlinedCard() {
           <DescriptionIcon color="primary" style={{ verticalAlign: "sub" }} />
           &nbsp;&nbsp;16 Applications received
         </Typography>
-        <Typography style={{ color: 'limegreen'}} >
-          <StarIconOne />
-          <StarIconThree />
-          <StarIconTwo />
-          
+        <Typography style={{ color: "limegreen" }}>
+          <StarIconOne style={{ paddingBottom: "12px" }} />
+          <StarIconThree style={{ marginLeft: "-4px", marginRight: "-1px" }} />
+          <StarIconTwo style={{ paddingBottom: "9px" }} />
           &nbsp;&nbsp;Anton DIMITROVA has been hired!
         </Typography>
       </CardContent>
-      <CardActions style={{float: 'right' }} >
-        <Button color="primary" style={{fontWeight: 'bold'}}>More</Button>
+      <CardActions style={{ float: "right" }}>
+        <Button color="primary" style={{ fontWeight: "bold" }}>
+          More
+        </Button>
       </CardActions>
     </Card>
   );
