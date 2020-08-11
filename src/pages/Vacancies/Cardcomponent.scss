@@ -1,9 +1,10 @@
 @import '../../assets/css/theme.scss';
 
 .root {
-    max-width: 420px;
-    max-height: 322px;
+    width: 420px;
+    min-height: 322px;
 }
+
 .title {
     font-size: 15px
 }

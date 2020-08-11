@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import DescriptionIcon from "@material-ui/icons/Description";
-import { blue } from "@material-ui/core/colors";
 import "./Cardcomponent.scss";
 import { ReactComponent as StarIconOne } from "./star-1.svg";
 import { ReactComponent as StarIconTwo } from "./star-2.svg";
@@ -30,11 +29,13 @@ export default function OutlinedCard() {
           <VisibilityIcon color="primary" style={{ verticalAlign: "middle" }} />
           &nbsp;&nbsp;236 views
         </Typography>
-        <Typography color="textSecondary">
+        <Typography color="textSecondary" style={{ marginTop: "13px" }}>
           <DescriptionIcon color="primary" style={{ verticalAlign: "sub" }} />
           &nbsp;&nbsp;16 Applications received
         </Typography>
-        <Typography style={{ color: "limegreen" }}>
+        <Typography
+          style={{ color: "limegreen", marginTop: "9.3px", marginLeft: "3px" }}
+        >
           <StarIconOne style={{ paddingBottom: "12px" }} />
           <StarIconThree style={{ marginLeft: "-4px", marginRight: "-1px" }} />
           <StarIconTwo style={{ paddingBottom: "9px" }} />
