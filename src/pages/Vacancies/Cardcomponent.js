@@ -10,7 +10,7 @@ import "./Cardcomponent.scss";
 import { ReactComponent as StarIconOne } from "./star-1.svg";
 import { ReactComponent as StarIconTwo } from "./star-2.svg";
 import { ReactComponent as StarIconThree } from "./star-3.svg";
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 
 class Cardcomponent extends Component {
   constructor(props) {
